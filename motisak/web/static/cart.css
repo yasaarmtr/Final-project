@@ -1,0 +1,13 @@
+.container {
+  max-width: 960px;
+  padding-top: 1%;
+  /* background-color: #e7e3d6; */
+}
+body {
+  background-color: #e7e3d6;
+
+}
+h2{
+  font-family: 'Zen Loop', cursive;
+
+}
