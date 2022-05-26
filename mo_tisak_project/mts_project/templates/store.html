@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+    <head>
+        <title>store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="store.css" />
+        <script src="store.js" async></script>
+    </head> {% endcomment %}
+
+    <body>
+        <navbarlogo>
+            <!-- <img class="mb-4" src="img/logo.png" alt="" width="72" height="57"> -->
+            <h2 class="section-header">Product</h2>
+        <navbarlogo/>
+        <h3 class="section-header">1st Collection</h3>
+
+        <section class="container content-section">
+            
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">tisak 1</span>
+                    <img class="shop-item-image" src="{% static 'static/img/00.png' %} ">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">tisak 2</span>
+                    <img class="shop-item-image" src="{% static 'static/img/01.png' %} ">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs200</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">tisak 3</span>
+                    <img class="shop-item-image" src="{% static 'static/img/02.png' %}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">tisak 4</span>
+                    <img class="shop-item-image" src="{% static 'static/img/03.png' %}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+<!-- #product2 -->
+<h3 class="section-header">2nd Collection</h3>
+
+        <section class="container content-section">
+            
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Chamarel tisak</span>
+                    <img class="shop-item-image" src="{% static 'static/img/10.png' %}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs250</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Le morne tisak</span>
+                    <img class="shop-item-image" src="{% static 'static/img/11.png' %}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs250</span>
+                        <button onclick class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Gris gris tisak</span>
+                    <img class="shop-item-image" src="{% static 'static/img/12.png' %}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs250</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Grand baie tisak</span>
+                    <img class="shop-item-image" src="{% static 'static/img/13.png' %}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs250</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+        </section>
+
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rs0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        
+    </body>
+{% endblock content %}
+
+{% comment %} </html> {% endcomment %}
